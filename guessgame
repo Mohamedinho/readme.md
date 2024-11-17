@@ -1,0 +1,11 @@
+README.md: guessinggame.sh
+    echo "# Guessing Game Project" > README.md
+    echo "\n## Description" >> README.md
+    echo "This project is a simple guessing game written in Bash. It asks the user to guess the number of files in the current directory." >> README.md
+    echo "\n## Make Run Details" >> README.md
+    echo "Date and Time of Run: $$(date)" >> README.md
+    echo "\n## Code Details" >> README.md
+    echo "Lines of Code in guessinggame.sh: $$(wc -l < guessinggame.sh)" >> README.md
+
+clean:
+    rm -f README.md
